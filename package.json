@@ -4,7 +4,8 @@
   "description": "",
   "main": "${workspace}/server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules --loader ./server/loader.mjs server/app.js"
   },
   "author": "",
   "license": "ISC",
