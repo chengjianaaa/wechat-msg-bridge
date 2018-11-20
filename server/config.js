@@ -4,7 +4,7 @@ const config = {
   wechatToken: process.env["wechatToken"],
 
   // 启动端口
-  port: 3000
+  port: process.env["port"]
 };
 
 export default config;
