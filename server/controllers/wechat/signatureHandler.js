@@ -13,6 +13,7 @@ const signatureHandler = async (ctx, next) => {
   if (!signature) {
     // 签名不对，结束请求并返回
     ctx.body = "签名失败...";
+    return;
   }
 
   // 签名正确
