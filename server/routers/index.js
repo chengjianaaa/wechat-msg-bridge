@@ -2,10 +2,10 @@
 
 import Router from "koa-router";
 
-import wechat from "./wechat.js";
+import msgParser from "./msgParser.js";
 
 const router = Router();
 
-router.use("/wechat", wechat.routes(), wechat.allowedMethods());
+router.use("/msgParser", msgParser.routes(), msgParser.allowedMethods());
 
 export default router;
